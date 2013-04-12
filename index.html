@@ -20,10 +20,20 @@
       fill: steelblue;
       fill-opacity: 0.5;
     }
+    #year_range {
+      position: fixed;
+      right:100px;
+      top:100px;
+
+    }
   </style>
 </head>
 
 <body>
+  <div id="year_range">
+    Browse by year:<br>
+    0<input type="range" min="0" max="61" step="1">61
+  </div>
   <script src="http://d3js.org/d3.v3.min.js"></script>
   <script src="visualize.js"></script>
 </body>
