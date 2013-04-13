@@ -97,10 +97,24 @@ d3.json("data.json", function(error, data) {
         .style("stroke-opacity", 0.1)
         .style("stroke-width", 1)
         .style("z-index", -999);
+/*	-------------------- begin test --------------------	*/
+// year options
+var yearsoptions = "";
+//option tag
+var opt = "<option>";
 
+function printSelect(){
+	for(var i=0; i<62; i++){
+		yearsoptions = yearsoptions+ opt + i + opt;
+	}
+}
+function printyears(){
+     document.write(yearsoptions);
+ }
+/*	-------------------- end --------------------	*/
     // draw_countries(countries, 61);
 
-    d3.select("input[type=range]")
+    d3.select("select[type=range]")
         .on(("change"), function() {
             countries.selectAll("text, circle").remove();
             draw_countries(countries, this.value);

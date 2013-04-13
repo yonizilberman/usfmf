@@ -24,15 +24,30 @@
       position: fixed;
       right:100px;
       top:100px;
-
+      border-radius: 10px;
     }
   </style>
 </head>
 
 <body>
   <div id="year_range">
+<!--    -->
+<select type="range">
+<!--
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>61</option>
+-->
+  <script type="text/javascript">printyears()</script>
+</select>
+<!-- 	 -->
+<!--
     Browse by year:<br>
     0<input type="range" min="0" max="61" step="1">61
+-->
   </div>
   <script src="http://d3js.org/d3.v3.min.js"></script>
   <script src="visualize.js"></script>
