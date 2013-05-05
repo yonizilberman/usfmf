@@ -1,12 +1,12 @@
 // Standard margins around the content
 // see http://bl.ocks.org/mbostock/3019563
 var margin = {
-    top: 20,
+    top: 30,
     right: 50,
     bottom: 30,
     left: 50
 },
-width = 960 - margin.left - margin.right,
+	width = 960 - margin.left - margin.right,
     height = 4600 - margin.top - margin.bottom;
 
 // row height
@@ -15,8 +15,8 @@ var y = 25; // bar height
 // some constants
 var funding_max = 13648194056,
     population_max = 1347565324,
-    bubble_min_radius = 10;
-bubble_max_radius = 100;
+    bubble_min_radius = 10,
+	bubble_max_radius = 100;
 
 // get and append an svg element inside the document body
 // and immediately add a group, translate it to create
